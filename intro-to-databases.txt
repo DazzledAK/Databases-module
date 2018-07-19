@@ -1,0 +1,48 @@
+1. What data types do each of these values represent?
+
+A) "A Clockwork Orange" - string
+B) 42 - integer
+C) 09/02/1945 - integer
+E) 98.7 - float
+D) $15.99 - float
+
+2. Explain when a database would be used. Explain when a text file would be used. - A database would be used when you need a way to store data that makes it easy to search for specific data, that can handle multiple applications accessing the data, and that persists beyond the end of a particular application process. A text file would be used when you don't need to search for the data since it's pretty small. You could use it on some small little personal project where you don't need to search huge almosts of data.
+
+3. Describe one difference between SQL and other programming languages. - SQL is a declarative language rather than a procedural language meaning that we just concern ourselves with what we want to find out, not how the database should find it. We just tell database what we are looking for and it finds it the fastest way unlike other languages where you have to tell them how to find what your looking for the fastest way.
+
+4. In your own words, explain how the pieces of a database system fit together at a high level. - Well, databases store data lots of data like strings, integers, and etc they are usually in tables and we use languages but for this we use SQL to basically tell the database to find what we are looking for. Databases work great for when you have a ton of data because when people or companies have huge amounts of data the database stores everything in tables and it's much easier and better than many other ways of storing the data. The database works with SQL to have SQL call data from itself.
+
+5. Explain the meaning of table, row, column, and value. - A table is something that holds labeled columns according to what is stored in them. Rows represent individual data or items that are stores like for example if you have a notebook the row would hold each paragraph. Columns are vertical unlike rows which are horizontal they store different data types depending on what your tables is about like one column can store the total of every item you bought. Values are whats in the columns and rows they are the data types inside each box like for whatever the tables is for so for like items bought you could have data types of integers, strings inside each column/row.
+
+6. List three data types that can be used in a table. - Integer, float, string
+
+7. English Descriptions and their results for queries.
+
+A) This one says select date and amount from payments. The results would be something like getting all the date and amount from the payments not just a specific one but everyone of them.
+     SELECT date, amount
+     FROM payments;
+B) This one says get amount from payments where the amount is greater than 500. Results would be amounts where payment is over 500.
+     SELECT amount
+     FROM payments
+     WHERE amount > 500;
+C) This one says get all from payments where the payee compares to Mega Foods. The results of this would be listing the column and row where the payee is mega foods.	
+     SELECT *
+     FROM payments
+     WHERE payee = 'Mega Foods';
+
+8. SQL queries:
+
+A)
+  SELECT email, signup
+  FROM users
+  WHERE name = "DeAndre Data"
+B)
+  SELECT userid
+  FROM users
+  WHERE email = "alessia.algorithm@uw.edu"
+C)
+  SELECT *
+  FROM users
+  WHERE userid = 4
+
+
